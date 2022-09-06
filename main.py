@@ -49,42 +49,22 @@ def check_all_messages(message):
         response('Siempre a la orden', ['gracias', 'te lo agradezco', 'thanks'], single_response=True)
         response('Vamos princesa, no eres tan fea. Bueno, sí. Eres fea, pero sólo eres así doce horas al día.',
                     ['soy', 'que tan'] , required_words=['guapo'] , single_response=True)
-        response(
-            'Me juzgan sin siquiera conocerme', 
-            ['feo', 'odio'],
-            single_response = True)
-        response(
-            'A la vieja muerta me la bajan de la mesa', 
-            ['casa', 'fiesta', 'mesa', 'bella', 'durmiente'], 
-            single_response = True)
-        response(
-            'No sabía lo que tenía hasta que lo perdí.', 
-            ['motivar', 'motivacional', 'frase', 'motivame'], 
-            single_response = True)
-        response(
-            'Si de verdad te trato tan mal ¿Por qué narices has vuelto?', 
-            ['maltratas', 'aburrido'],
-            single_response = True)
-        response(
-            '¿No podríamos arreglarlo con una cervecita?', 
-            ['pelea', 'pelear', 'peleemos', 'molesto', 'molesta', 'siento', 'mal'],
-            single_response = True)
-        response(
-            'Soy único en mi especie', 
-            ['eres', 'unico', 'especial'],
-            single_response = True)
-        response(
-            'Yo no tengo ningún problema, es el mundo quien parece tener un problema conmigo', 
-            ['problemas', 'problema'],
-            single_response = True)
-        response(
-            'Érase una vez una princesa encantadora. Pero tenía sobre ella un encantamiento de un tipo terrible que solo podía romperse con el primer beso del amor. Estaba encerrada en un castillo custodiado por un terrible Dragón que respiraba incendio. Muchos valientes caballeros habían intentado liberarla de esta terrible prisión, pero ninguno prevaleció. Ella esperó en la fortaleza del dragón, en la habitación más alta de la torre más alta, por su amor verdadero, y el primer beso del amor verdadero.',
-            ['cuento', 'cuenta', 'cuentame'],
-            single_response=True)
-        response(
-            '¡AAAAAAAARRGGG!!',
-            ['gruñeme'],
-            required_words=['gruñeme'])
+        response('Me juzgan sin siquiera conocerme', ['feo', 'odio'],single_response = True)
+        response('A la vieja muerta me la bajan de la mesa', ['casa', 'fiesta', 'mesa', 'bella', 'durmiente'], single_response = True)
+        response('No sabía lo que tenía hasta que lo perdí.', ['motivar', 'motivacional', 'frase', 'motivame'], single_response = True)
+        response('Si de verdad te trato tan mal ¿Por qué narices has vuelto?', ['maltratas', 'aburrido'], single_response = True)
+        response('¿No podríamos arreglarlo con una cervecita?', ['pelea', 'pelear', 'peleemos', 'molesto', 'molesta', 'siento', 'mal'], single_response = True)
+        response('Soy único en mi especie', ['eres', 'unico', 'especial'], ingle_response = True)
+        response('Yo no tengo ningún problema, es el mundo quien parece tener un problema conmigo', ['problemas', 'problema'], single_response = True)
+        response('Érase una vez una princesa encantadora. Pero tenía sobre ella un encantamiento de un tipo terrible que solo podía romperse con el primer beso del amor. Estaba encerrada en un castillo custodiado por un terrible Dragón que respiraba incendio. Muchos valientes caballeros habían intentado liberarla de esta terrible prisión, pero ninguno prevaleció. Ella esperó en la fortaleza del dragón, en la habitación más alta de la torre más alta, por su amor verdadero, y el primer beso del amor verdadero.',
+            ['cuento', 'cuenta', 'cuentame'], single_response=True)
+        response('¡AAAAAAAARRGGG!!', ['gruñeme'], required_words=['gruñeme'])
+        response('Uff, Shrek, ¿tu hiciste eso? No manches. Avisa antes de echarte uno, traía la boca abierta. Le di el golpe',
+                 ['pedo', 'flatulencia', 'quien se murio'], single_response=True)
+        response('Ahora sube y agárrate fuerte, que todavía no le pongo cinturones de seguridad', ['seguridad', 'subete', 'subir', 'cinturones'], single_response=True)
+        response( 'Traigo un dragón y no dudaré en usarlo… Soy un burro sin mecate', ['traigo', 'traer', 'mecate'], single_response=True)
+        response('¡Santo Dios! ¡Te comistes a la princesa!', ['comer', 'comiste', 'comer princesa', 'comiste princesa'], single_response=True)
+        response('¿Oístes lo que dijo? Me llamó noble corcel', ['noble', 'corcel'], single_response=True)
 
         best_match = max(highest_prob, key=highest_prob.get)
         #print(highest_prob)
