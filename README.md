@@ -1,6 +1,6 @@
 # I.A.ChatBot
 Chatbot para la clase de I.A.
-Sección: D02
+      Sección: D02
 Maestro: Oliva Navarro Diego Alberto
 
 Integrantes del equipo:
